@@ -1,0 +1,80 @@
+.video-player-container{
+    margin-top: 20px;
+    line-height: 0%;
+    max-width: fit-content;
+}
+
+.controls-container{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.progressBar-container{
+    margin-top: 10px;
+}
+
+
+.rangeValue{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #116c83;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    -webkit-transition: .2s;
+}
+  
+.rangeValue:hover{
+    opacity: 1;
+}
+  
+.rangeValue::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #55d6aa;
+    cursor: pointe
+}
+  
+.rangeValue::-moz-range-thumb{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #55d6aa;
+    cursor: pointer;
+}
+
+.rangeValue::-moz-range-progress{
+    background: #03252f;
+    height: 10px;
+}
+
+.rangeValue::-webkit-slider-runnable-track{
+    background: #03252f;
+    height: 10px;
+}
+
+#player{
+    max-width: 1280px;
+    max-height: 720px;
+}
+
+#progressBar{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 1130px;
+}
+  
+#currentTime{
+    width: 40px;
+    text-align: center;
+}
+  
+#durationTime{
+    width: 40px;
+    text-align: center;
+}
