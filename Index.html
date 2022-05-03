@@ -1,0 +1,50 @@
+<!--THE ID OF THE COMPONENTS AND THE STRUCT OF THE HTML SHOULD BE THE SAME
+    Author: Fazio Davide 4BI 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="css.css">
+
+        <title>Video player</title>
+    </head>
+
+    <body>
+        
+        <div class="args-container">
+            <button type="button" id="nucleare">clicca per vedere nucleare</button>
+            <button type="button" id="geotermico">clicca per vedere geotermico</button>
+        </div>
+
+        <div class="topics-container">
+            <button type="button" id="geopolitica">GEOPOLITICA</button>
+            <button type="button" id="tecnologia">TECNOLOGIA</button>
+            <button type="button" id="impatto_ambientale">IMPATTO AMBIENTALE</button>
+        </div>
+
+        <center>
+
+            <div class="video-player-container">
+                <video src="" id="player" type="video/mp4"></video>
+
+                <div class="controls-container">
+                    <button type="button" title="play" id="playButton"><img src="play.svg" width="24px" height="24px" id="playImage"></button>
+                    <button type="button" title="fullscreen" id="fullscreenButton"><img src="fullscreen.svg" width="24px" height="24px" id="playImage"></button>
+                    <button type="button" title="mute" id="volumeButton"><img src="unmute.ico" width="24px" height="24px" id="volumeImage"></button>
+                    <input type="range" title="volume" min="0" max="1" step="0.001" value="1" id="volumeRange" class="rangeValue"></input>
+
+                    <div class="progressBar-container">
+                        <span><p id="currentTime"></p><input type="range" min="0" max="" step="0.001" value="" id="progressBar" class="rangeValue"><p id="durationTime"></p></span>                        
+                    </div>
+                </div>
+
+            </div>
+
+        </center>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
